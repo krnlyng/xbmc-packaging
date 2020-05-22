@@ -86,10 +86,14 @@ BuildRequires: libssh-devel
 BuildRequires: libtiff-devel
 BuildRequires: libtool
 BuildRequires: libuuid-devel
-%ifnarch %{arm}
-BuildRequires: libva-devel
-BuildRequires: libvdpau-devel
-%endif
+#%ifnarch %{arm}
+#BuildRequires: libva-devel
+#BuildRequires: libvdpau-devel
+#%endif
+BuildRequires: giflib-devel
+BuildRequires: openssl-devel
+BuildRequires: libxkbcommon-devel
+BuildRequires: groff
 BuildRequires: libvorbis-devel
 %if 0%{?_with_wayland}
 BuildRequires: wayland-devel
